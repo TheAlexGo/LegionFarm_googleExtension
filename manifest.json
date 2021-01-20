@@ -1,0 +1,28 @@
+{
+"manifest_version": 2,
+"name": "Legionfarm script",
+"description": "Скрипт для работы с лотами на сайте legionfarm.com",
+"version": "2.0.0",
+"icons": {"128": "images/icon_128.png"},
+"permissions": [
+  "activeTab",
+  "storage"
+],
+"background": {
+  "scripts": ["scripts/background.js"]
+},
+"content_scripts": [
+  {
+    "matches": [
+      "https://legionfarm.com/admin/booster-area/*",
+      "https://lfcarry.com/admin/booster-area/*"
+    ],
+    "js": ["scripts/contentscript.js"]
+  }
+],
+"browser_action": {
+  "default_icon": "images/icon.jpg",
+  "default_popup": "popup.html"
+},
+  "web_accessible_resources": [ "sound/sound_new.mp3", "settings/config.json", "images/work.gif", "images/not_work.gif" ]
+}

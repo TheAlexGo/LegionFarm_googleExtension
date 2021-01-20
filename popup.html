@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>LegionFarm Scripts</title>
+		<!--ссылаемся на шрифты, используемые в документе-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<!--здесь мы ссылаемся на стили, которые будем использовать в документе, а именно стиль иконок-->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			  crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<!--конец объяснения блока со стилями-->
+
+	<body>
+	<!--контейнер, содержащий название, логотип и номер версии-->
+		<div class="modal-header">
+			<h1 class="logo">
+				<img class="logo-icon" src="images/logo.jpg" alt="Скрипт для legionfarm"> Скрипт для legionfarm
+			</h1>
+		</div>
+		<!--Конец контейнера-->
+
+		<!--контейнер, содержащий описание функций расширения-->
+		<div class="modal-content">
+			<div class="version">Версия скрипта: (2.0.0)</div>
+			<p style="font-size: 24px;
+    		text-align: center; margin: 20px 0;">Запустить скрипт?</p>
+			<div style="display: flex;
+    		justify-content: space-between;">
+				<button style="width: 40%;
+			 padding: 10px;
+			 border-radius: 10px;
+			 background-color: #28a745;
+			 color: #fff;
+			 border: 0;
+			 font-size: 20px;
+			 cursor: pointer;
+			 " id="button_ext">Да</button>
+				<button style="width: 40%;
+			 padding: 10px;
+			 border-radius: 10px;
+			 background-color: #dc3545;
+			 color: #fff;
+			 border: 0;
+			 font-size: 20px;
+			 cursor: pointer;
+			 " id="button_ext_off">Нет</button>
+			</div>
+			<button style="width: 100%;
+			 padding: 10px;
+			 margin: 10px 0;
+			 border-radius: 10px;
+			 background-color: #007bff;
+			 color: #fff;
+			 border: 0;
+			 font-size: 20px;
+			 cursor: pointer;
+			 " id="clear">Очистить список</button>
+		</div>
+		<!--Конец контейнера-->
+		<script src="scripts/contentscript.js"></script>
+	</body>
+</html>
